@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2282808172ED3D100CBADD7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2282807172ED3D100CBADD7 /* Cocoa.framework */; };
-		D2282812172ED3D100CBADD7 /* WikiRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D2282811172ED3D100CBADD7 /* WikiRepository.m */; };
 		D228281A172ED3D100CBADD7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2282819172ED3D100CBADD7 /* SenTestingKit.framework */; };
 		D228281B172ED3D100CBADD7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2282807172ED3D100CBADD7 /* Cocoa.framework */; };
 		D228281E172ED3D100CBADD7 /* libWikiRepository.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2282804172ED3D100CBADD7 /* libWikiRepository.a */; };
 		D2282824172ED3D100CBADD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2282822172ED3D100CBADD7 /* InfoPlist.strings */; };
-		D2282827172ED3D100CBADD7 /* WikiRepositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2282826172ED3D100CBADD7 /* WikiRepositoryTests.m */; };
+		D2282839172ED41E00CBADD7 /* libDomain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2282836172ED41000CBADD7 /* libDomain.a */; };
+		D228283D172EE02900CBADD7 /* TaskRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = D228283B172EE02900CBADD7 /* TaskRepository.h */; };
+		D228283E172EE02900CBADD7 /* TaskRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D228283C172EE02900CBADD7 /* TaskRepository.m */; };
+		D228283F172EE02900CBADD7 /* TaskRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D228283C172EE02900CBADD7 /* TaskRepository.m */; };
+		D2282842172EE09200CBADD7 /* TestTaskRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D2282841172EE09200CBADD7 /* TestTaskRepository.m */; };
+		D2282844172EE1DB00CBADD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D228280C172ED3D100CBADD7 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +27,20 @@
 			remoteGlobalIDString = D2282803172ED3D100CBADD7;
 			remoteInfo = WikiRepository;
 		};
+		D2282835172ED41000CBADD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2282830172ED41000CBADD7 /* Domain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2B2750A172DCA3F00FE46C7;
+			remoteInfo = Domain;
+		};
+		D2282837172ED41000CBADD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2282830172ED41000CBADD7 /* Domain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2B2751E172DCA3F00FE46C7;
+			remoteInfo = DomainTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -33,14 +50,15 @@
 		D228280B172ED3D100CBADD7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D228280C172ED3D100CBADD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D228280F172ED3D100CBADD7 /* WikiRepository-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WikiRepository-Prefix.pch"; sourceTree = "<group>"; };
-		D2282810172ED3D100CBADD7 /* WikiRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WikiRepository.h; sourceTree = "<group>"; };
-		D2282811172ED3D100CBADD7 /* WikiRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WikiRepository.m; sourceTree = "<group>"; };
 		D2282818172ED3D100CBADD7 /* WikiRepositoryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiRepositoryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2282819172ED3D100CBADD7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D2282821172ED3D100CBADD7 /* WikiRepositoryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WikiRepositoryTests-Info.plist"; sourceTree = "<group>"; };
 		D2282823172ED3D100CBADD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D2282825172ED3D100CBADD7 /* WikiRepositoryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WikiRepositoryTests.h; sourceTree = "<group>"; };
-		D2282826172ED3D100CBADD7 /* WikiRepositoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WikiRepositoryTests.m; sourceTree = "<group>"; };
+		D2282830172ED41000CBADD7 /* Domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Domain.xcodeproj; path = ../Domain/Domain.xcodeproj; sourceTree = "<group>"; };
+		D228283B172EE02900CBADD7 /* TaskRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskRepository.h; sourceTree = "<group>"; };
+		D228283C172EE02900CBADD7 /* TaskRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskRepository.m; sourceTree = "<group>"; };
+		D2282840172EE09200CBADD7 /* TestTaskRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTaskRepository.h; sourceTree = "<group>"; };
+		D2282841172EE09200CBADD7 /* TestTaskRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTaskRepository.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2282808172ED3D100CBADD7 /* Cocoa.framework in Frameworks */,
+				D2282839172ED41E00CBADD7 /* libDomain.a in Frameworks */,
+				D2282844172EE1DB00CBADD7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +87,7 @@
 		D22827FB172ED3D100CBADD7 = {
 			isa = PBXGroup;
 			children = (
+				D2282830172ED41000CBADD7 /* Domain.xcodeproj */,
 				D228280D172ED3D100CBADD7 /* WikiRepository */,
 				D228281F172ED3D100CBADD7 /* WikiRepositoryTests */,
 				D2282806172ED3D100CBADD7 /* Frameworks */,
@@ -107,8 +127,8 @@
 		D228280D172ED3D100CBADD7 /* WikiRepository */ = {
 			isa = PBXGroup;
 			children = (
-				D2282810172ED3D100CBADD7 /* WikiRepository.h */,
-				D2282811172ED3D100CBADD7 /* WikiRepository.m */,
+				D228283B172EE02900CBADD7 /* TaskRepository.h */,
+				D228283C172EE02900CBADD7 /* TaskRepository.m */,
 				D228280E172ED3D100CBADD7 /* Supporting Files */,
 			);
 			path = WikiRepository;
@@ -125,8 +145,8 @@
 		D228281F172ED3D100CBADD7 /* WikiRepositoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				D2282825172ED3D100CBADD7 /* WikiRepositoryTests.h */,
-				D2282826172ED3D100CBADD7 /* WikiRepositoryTests.m */,
+				D2282840172EE09200CBADD7 /* TestTaskRepository.h */,
+				D2282841172EE09200CBADD7 /* TestTaskRepository.m */,
 				D2282820172ED3D100CBADD7 /* Supporting Files */,
 			);
 			path = WikiRepositoryTests;
@@ -141,6 +161,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D2282831172ED41000CBADD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2282836172ED41000CBADD7 /* libDomain.a */,
+				D2282838172ED41000CBADD7 /* DomainTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -148,6 +177,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D228283D172EE02900CBADD7 /* TaskRepository.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +239,12 @@
 			mainGroup = D22827FB172ED3D100CBADD7;
 			productRefGroup = D2282805172ED3D100CBADD7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D2282831172ED41000CBADD7 /* Products */;
+					ProjectRef = D2282830172ED41000CBADD7 /* Domain.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D2282803172ED3D100CBADD7 /* WikiRepository */,
@@ -216,6 +252,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D2282836172ED41000CBADD7 /* libDomain.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDomain.a;
+			remoteRef = D2282835172ED41000CBADD7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D2282838172ED41000CBADD7 /* DomainTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DomainTests.octest;
+			remoteRef = D2282837172ED41000CBADD7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D2282815172ED3D100CBADD7 /* Resources */ = {
@@ -249,7 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2282812172ED3D100CBADD7 /* WikiRepository.m in Sources */,
+				D228283E172EE02900CBADD7 /* TaskRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2282827172ED3D100CBADD7 /* WikiRepositoryTests.m in Sources */,
+				D228283F172EE02900CBADD7 /* TaskRepository.m in Sources */,
+				D2282842172EE09200CBADD7 /* TestTaskRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +401,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WikiRepository/WikiRepository-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -356,6 +411,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WikiRepository/WikiRepository-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -368,6 +424,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WikiRepository/WikiRepository-Prefix.pch";
 				INFOPLIST_FILE = "WikiRepositoryTests/WikiRepositoryTests-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -381,6 +438,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WikiRepository/WikiRepository-Prefix.pch";
 				INFOPLIST_FILE = "WikiRepositoryTests/WikiRepositoryTests-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
