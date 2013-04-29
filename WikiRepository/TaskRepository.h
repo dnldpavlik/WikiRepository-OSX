@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Domain/Task.h"
+#import "Domain/ITask.h"
 
 @interface TaskRepository : NSObject
 
 /*! 
     Creates a Task
-    @result returns a new instance of Task
+    @result returns a new instance of Task as protocal of ITask
 */
--(Task *)Create;
+-(id<ITask>)Create;
 
 @end

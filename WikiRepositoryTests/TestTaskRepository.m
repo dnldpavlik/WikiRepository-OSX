@@ -20,15 +20,19 @@
 
 - (void)tearDown
 {
-    // Tear-down code here.
-    
     [super tearDown];
 }
 
+/*! 
+    Tests to see that the create method returns a new task that conforms to the 
+    ITask protocol
+*/
 -(void)testCreate
 {
     TaskRepository *taskRepository = [[TaskRepository alloc] init];
-    STAssertNotNil([taskRepository Create], @"Create returned nil.");
+    id task = [taskRepository Create];
+    STAssertNotNil(task, @"Create returned nil.");
+    STAssertTrue([task 	conformsToProtocol:@protocol(ITask)], @"Returned task does not conform to ITask protocol");
 }
 
 @end
