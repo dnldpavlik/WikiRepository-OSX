@@ -17,7 +17,15 @@
 		D228283F172EE02900CBADD7 /* TaskRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D228283C172EE02900CBADD7 /* TaskRepository.m */; };
 		D2282842172EE09200CBADD7 /* TestTaskRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D2282841172EE09200CBADD7 /* TestTaskRepository.m */; };
 		D2282844172EE1DB00CBADD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D228280C172ED3D100CBADD7 /* Foundation.framework */; };
+		D23FD78D173002130021856C /* IWikiFileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = D23FD78C173002130021856C /* IWikiFileReader.h */; };
+		D23FD791173007B20021856C /* IWikiFileWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = D23FD790173007B20021856C /* IWikiFileWriter.h */; };
 		D266755A172F6DD100A7C8F8 /* IWikiFile.h in Headers */ = {isa = PBXBuildFile; fileRef = D2667559172F6DD100A7C8F8 /* IWikiFile.h */; };
+		D2BDFDF1173061B10061DF17 /* WikiFileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = D2BDFDEF173061B10061DF17 /* WikiFileReader.h */; };
+		D2BDFDF2173061B10061DF17 /* WikiFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BDFDF0173061B10061DF17 /* WikiFileReader.m */; };
+		D2BDFDF3173061B10061DF17 /* WikiFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BDFDF0173061B10061DF17 /* WikiFileReader.m */; };
+		D2BDFDF8173063060061DF17 /* WikiFile.h in Headers */ = {isa = PBXBuildFile; fileRef = D2BDFDF6173063060061DF17 /* WikiFile.h */; };
+		D2BDFDF9173063060061DF17 /* WikiFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BDFDF7173063060061DF17 /* WikiFile.m */; };
+		D2BDFDFA173063060061DF17 /* WikiFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BDFDF7173063060061DF17 /* WikiFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +68,13 @@
 		D228283C172EE02900CBADD7 /* TaskRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskRepository.m; sourceTree = "<group>"; };
 		D2282840172EE09200CBADD7 /* TestTaskRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTaskRepository.h; sourceTree = "<group>"; };
 		D2282841172EE09200CBADD7 /* TestTaskRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTaskRepository.m; sourceTree = "<group>"; };
+		D23FD78C173002130021856C /* IWikiFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWikiFileReader.h; sourceTree = "<group>"; };
+		D23FD790173007B20021856C /* IWikiFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWikiFileWriter.h; sourceTree = "<group>"; };
 		D2667559172F6DD100A7C8F8 /* IWikiFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWikiFile.h; sourceTree = "<group>"; };
+		D2BDFDEF173061B10061DF17 /* WikiFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiFileReader.h; sourceTree = "<group>"; };
+		D2BDFDF0173061B10061DF17 /* WikiFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiFileReader.m; sourceTree = "<group>"; };
+		D2BDFDF6173063060061DF17 /* WikiFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiFile.h; sourceTree = "<group>"; };
+		D2BDFDF7173063060061DF17 /* WikiFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +145,10 @@
 			children = (
 				D228283B172EE02900CBADD7 /* TaskRepository.h */,
 				D228283C172EE02900CBADD7 /* TaskRepository.m */,
+				D2BDFDF6173063060061DF17 /* WikiFile.h */,
+				D2BDFDF7173063060061DF17 /* WikiFile.m */,
+				D2BDFDEF173061B10061DF17 /* WikiFileReader.h */,
+				D2BDFDF0173061B10061DF17 /* WikiFileReader.m */,
 				D2667556172F6D4800A7C8F8 /* Protocols */,
 				D228280E172ED3D100CBADD7 /* Supporting Files */,
 			);
@@ -177,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				D2667559172F6DD100A7C8F8 /* IWikiFile.h */,
+				D23FD78C173002130021856C /* IWikiFileReader.h */,
+				D23FD790173007B20021856C /* IWikiFileWriter.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -190,6 +210,10 @@
 			files = (
 				D228283D172EE02900CBADD7 /* TaskRepository.h in Headers */,
 				D266755A172F6DD100A7C8F8 /* IWikiFile.h in Headers */,
+				D23FD78D173002130021856C /* IWikiFileReader.h in Headers */,
+				D23FD791173007B20021856C /* IWikiFileWriter.h in Headers */,
+				D2BDFDF1173061B10061DF17 /* WikiFileReader.h in Headers */,
+				D2BDFDF8173063060061DF17 /* WikiFile.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D228283E172EE02900CBADD7 /* TaskRepository.m in Sources */,
+				D2BDFDF2173061B10061DF17 /* WikiFileReader.m in Sources */,
+				D2BDFDF9173063060061DF17 /* WikiFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +350,8 @@
 			files = (
 				D228283F172EE02900CBADD7 /* TaskRepository.m in Sources */,
 				D2282842172EE09200CBADD7 /* TestTaskRepository.m in Sources */,
+				D2BDFDF3173061B10061DF17 /* WikiFileReader.m in Sources */,
+				D2BDFDFA173063060061DF17 /* WikiFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

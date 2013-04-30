@@ -8,6 +8,8 @@
 
 #import "TaskRepository.h"
 #import "Domain/Task.h"
+#import "IWikiFileReader.h"
+#import "IWikiFileWriter.h"
 
 @interface TaskRepository()
 
@@ -17,10 +19,38 @@
 */
 @property (strong, nonatomic) NSMutableArray *cache;
 
+@property (strong, nonatomic) id<IWikiFileReader> reader;
+
+@property (strong, nonatomic) id<IWikiFileWriter> writer;
+
 @end
 
 @implementation TaskRepository	
 
+-(id)init
+{
+    return nil;
+}
+
+// designated initializer
+-(id)init:(id<IWikiFileReader>)fileReader fileWriter:(id<IWikiFileWriter>)writer
+{
+    self = [super init];
+    
+    if (self)
+    {
+        _reader = fileReader;
+        _writer = writer;
+    }
+    
+    return self;
+}
+
+/*!
+    Gets the cache, if it is empty initializes a new instance 
+    of Mutable Array
+    @result NSMutableArray
+*/
 -(NSMutableArray *)cache
 {
     if (_cache)
@@ -32,9 +62,7 @@
 }
 
 -(id<ITask>)Create{
-    Task *task = [[Task alloc] init];
-    id<ITask> iTask = (id<ITask>) task;
-    return iTask;
+    return (id<ITask>) [[Task alloc] init];
 }
 
 @end
