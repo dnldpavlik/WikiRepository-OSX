@@ -17,6 +17,7 @@
 		D228283F172EE02900CBADD7 /* TaskRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D228283C172EE02900CBADD7 /* TaskRepository.m */; };
 		D2282842172EE09200CBADD7 /* TestTaskRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D2282841172EE09200CBADD7 /* TestTaskRepository.m */; };
 		D2282844172EE1DB00CBADD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D228280C172ED3D100CBADD7 /* Foundation.framework */; };
+		D266755A172F6DD100A7C8F8 /* IWikiFile.h in Headers */ = {isa = PBXBuildFile; fileRef = D2667559172F6DD100A7C8F8 /* IWikiFile.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		D228283C172EE02900CBADD7 /* TaskRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskRepository.m; sourceTree = "<group>"; };
 		D2282840172EE09200CBADD7 /* TestTaskRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTaskRepository.h; sourceTree = "<group>"; };
 		D2282841172EE09200CBADD7 /* TestTaskRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTaskRepository.m; sourceTree = "<group>"; };
+		D2667559172F6DD100A7C8F8 /* IWikiFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWikiFile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				D228283B172EE02900CBADD7 /* TaskRepository.h */,
 				D228283C172EE02900CBADD7 /* TaskRepository.m */,
+				D2667556172F6D4800A7C8F8 /* Protocols */,
 				D228280E172ED3D100CBADD7 /* Supporting Files */,
 			);
 			path = WikiRepository;
@@ -170,6 +173,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D2667556172F6D4800A7C8F8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D2667559172F6DD100A7C8F8 /* IWikiFile.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -178,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D228283D172EE02900CBADD7 /* TaskRepository.h in Headers */,
+				D266755A172F6DD100A7C8F8 /* IWikiFile.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
